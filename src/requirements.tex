@@ -1,0 +1,36 @@
+\chapter{Wymagania}
+Aplikacja powinna służyć jako baza danych nt. pojazdów różnego rodzaju -- tj. pojazdów osobowych, motocykli oraz
+pojazdów dostawczych.
+
+Aplikacja powinna umożliwiać dodawanie, usuwanie, edycje oraz przeglądanie pojazdów. Należy
+zapewnić również możliwość wyszukiwania pojazdów.
+Dane nt. pojazdów oraz użytkowników aplikacji powinny być zapisywane pomiędzy kolejnymi uruchomieniami aplikacji oraz
+powinna być możliwość manualnego wczytania oraz zapisania bazy pojazdów do pliku.
+
+W aplikacji wyróżniamy dwóch typów użytkowników: administratora odpowiedzialnego za dodawanie, usuwanie i
+modyfikowanie użytkowników oraz zwykłych użytkowników, którzy będą korzystali z aplikacji.
+
+Aplikacja powinna działać pod systemem Windows na komputerach osobistych oraz zawierać graficzny interfejs.
+Aby móc korzystać z aplikacji, powinno być wymagane zalogowanie do niej.
+
+\section{Wymagania funkcjonalne}
+\begin{itemize}
+    \item Przechowywanie danych pojazdu: marka, model, moc, dopuszczalna masa całkowita, liczba siedzeń, paliwo,
+    lata produkcji, pojemność silnika, rodzaj pojazdu (pojazd osobowy, motocykl, pojazd dostawczy);
+    \item Wyszukiwanie pojazdu po marce oraz modelu;
+    \item Wczytanie oraz zapisanie stanu bazy pojazdów do pliku;
+    \item Dodawanie, modyfikację oraz usuwanie pojazdów;
+    \item Przechowywanie użytkowników: nazwa użytkownika, hasło, rola (administrator lub zwykły użytkownik);
+    \item Odczyt i zapis użytkowników systemu do pliku;
+    \item Dodawanie, usuwanie, modyfikacja użytkowników za pomocą konta użytkownika z rolą administratora;
+    \item Mechanizm uwierzytelnienia w celu korzystania z aplikacji za pomocą nazwy użytkownika i hasła.
+\end{itemize}
+
+\section{Wymagania niefunkcjonalne}
+\begin{itemize}
+    \item Aplikacja okienkowa dedykowana na system Windows (od wersji 7);
+    \item Dane o pojazdach oraz użytkownikach systemu przechowywane są w pliku tekstowym (kodowanie UTF-8) o
+    rozszerzeniu $.csv$.
+    Każdy wiersz pliku opisuje pojedyńczego użytkownika lub pojazd, dane w wierszu rozdzielane są za pomocą ";";
+    \item Hasła użytkowników są szyfrowane za pomocą funkcji skrótu SHA-1.
+\end{itemize}
