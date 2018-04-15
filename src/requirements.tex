@@ -15,7 +15,8 @@ Pojazdy te można łączyć w pary (zespoły pojazdów) - samochód ciężarowy 
 
 Aplikacja powinna umożliwiać określanie rodzaju przestrzeniu ładunkowej pojazdów, które ją posiadają. Wyróżniamy
 następujące rodzaje ładunków: kontener, skrzynia, cysterna. Każda przestrzeń ładunkowa powinna być opisana swoją
-ładownością oraz rodzajem (np. cysterna - 1500 \si{\litre}).
+ładownością oraz rodzajem (np. cysterna - 1500 \si{\litre}). Dodatkowo powinna być możliwość dodawania ładunków
+do pojazdu.
 
 Aktualny stan aplikacji powinien być zapisywany pomiędzy kolejnymi uruchomieniami aplikacji oraz
 powinna być możliwość manualnego wczytania oraz zapisania stanu do pliku.
@@ -65,6 +66,18 @@ Aby móc korzystać z aplikacji, powinno być wymagane zalogowanie do niej.
         4 & TRAILER & WT 676FG & TRUE & 2000 \si{\kilogram} & CHEST & NULL \\ \hline
     \end{tabular}
     \caption {Pojazdy}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ |c|c|c|c| }
+        \hline
+        id & nazwa & ilość & id pojazdu \\ \hline
+        1 & benzyna & 1500 \si{\litre} & 3 \\ \hline
+        2 & komputery & 200 \si{\kilogram} & 1 \\ \hline
+        3 & telewizory & 300 \si{\kilogram} & 1 \\ \hline
+    \end{tabular}
+    \caption {Ładunki}
 \end{table}
 
 \begin{table}[h]
